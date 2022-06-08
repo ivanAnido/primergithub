@@ -720,6 +720,11 @@ background: linear-gradient(180deg, rgba(51,33,68,1) 4%, rgba(50,30,30,1) 29%, r
    
 
 }
+.recomendacion__grillado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
 
 
  }
