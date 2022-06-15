@@ -241,35 +241,11 @@ h1{
     }
 
 
-<<<<<<< HEAD
     .grillado__section div img {
     width: 100%;
     height: 100%;
     }
     
-=======
-                                       .grillado__section{
-                                        justify-content: center;
-                                        gap: 0.5rem;
-                                        display: grid;
-                                        grid-template-columns: 1fr;
-                                        grid-template-rows:  12rem 8rem;
-                                        padding: 2rem;
-                                        background: rgb(51,33,68);
-                                        background: linear-gradient(0deg, rgba(51,33,68,1) 4%, rgba(50,30,30,1) 29%, rgba(0,0,0,1) 100%);
-                                    
-                                        
-                                    
-                                    }
-
-
-                                       .grillado__section div img {
-                                        width: 100%;
-                                        height: 100%;
-                                        object-fit: cover;
-                                        
-                                    }
->>>>>>> cffbba82842e39145a2d325e98d8203b32e4b1e3
     
                                     .img1{
                                         grid-column-start: 1;
