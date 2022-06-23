@@ -18,7 +18,7 @@
     
 .carrusel__descripcion{
     color: rgb(224, 166, 94);
-    background-color: rgba(19, 18, 18, 0.568);
+    background-color: map-get($colores,"backgrund-text");
     width: fit-content;
         
     }

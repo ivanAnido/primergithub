@@ -3,12 +3,14 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="stylesheet" href="../estilos/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>netflilos</title>
+    <meta name="description" content="En este sitio web encontraras recomendaciones de peliculas, con su sinopsis, ordenadas mediante filtros">
+    <meta name="keywords" content="pelicula, cine, series, arte, sinopsis, actores, directores, valoracion">
+    <title>recomendaciones/netflilos</title>
 </head>
 <body>
     <main class="main">
@@ -51,7 +53,7 @@
 
          <nav class="nav navbar sticky-top navbar-dark navbar-expand-lg bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img class="nav__logo" src="../assets/logo N.jpg" alt="logo"></a>
+              <a class="navbar-brand" href="../index.html"><img class="nav__logo" src="../assets/logo N.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -122,7 +124,7 @@
                   </div>
                </div>
                <div class="col-md-6">
-                  <h1 class="fs-1">Las mejores peliculas de la historia</h1> 
+                  <h1 class="fs-1">Las mejores peliculas</h1> 
                </div>
              
            </div>
@@ -130,8 +132,8 @@
         </header>
 
 
-        <section> <h1 >filtros</h1>
-            <div class="section__recomendaciones">  
+        <section> <h2 class="subtitulos__h2 mt-5">filtros</h2>
+       <!----     <div class="section__recomendaciones">  
                 <div class="main__filtro">
                     <select class="select__filtro" name="genero" id="genero"> 
                         <option value="">genero</option>
@@ -154,6 +156,118 @@
                         <option value="lo ultimo">lo ultimo</option>
                     </select>
                 </div>
+              -->
+              
+
+                <div class="container row ">
+                  <div class="col-md-3 " >
+                    <div class="input-group">
+                      <label class="input-group-text" for="inputGroupSelect01">Ordenar por</label>
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>opciones</option>
+                        <option value="1">titulo</option>
+                        <option value="2">lo mas nuevo</option>
+                        <option value="3">lo mas viejo</option>
+                        <option value="4">mejor puntuado</option>
+                        <option value="5">peor puntuado</option>
+
+                      </select>
+                    </div>
+                    
+                    <div class="input-group">
+                       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="titulo de pelicula">
+                    </div>
+                     
+                      
+
+
+                  </div>
+                    
+                  <div class=" col-md-3" >
+                    
+                    <div class="input-group">
+                      <label class="input-group-text" for="inputGroupSelect01">fecha desde</label>
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>opciones</option>
+                        <option value="1">1980</option>
+                        <option value="2">1990</option>
+                        <option value="3">2000</option>
+                        <option value="4">2010</option>
+                        <option value="5">2020</option>
+
+                      </select>
+                    </div>
+                    
+                    <div class="input-group">
+                      <label class="input-group-text" for="inputGroupSelect01">fecha hasta</label>
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>opciones</option>
+                        <option value="1">1980</option>
+                        <option value="2">1990</option>
+                        <option value="3">2000</option>
+                        <option value="4">2010</option>
+                        <option value="5">2020</option>
+
+                      </select>
+                    </div>
+
+                  </div>
+
+                <div class=" col-md-3" >
+
+                  <div class="input-group">
+                    <label class="input-group-text" for="inputGroupSelect01">puntuacion desde</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>opciones</option>
+                      <option value="1">1 estrella</option>
+                      <option value="2">2 estrellas</option>
+                      <option value="3">3 estrellas</option>
+                      <option value="4">4 estrellas</option>
+                      <option value="5">5 estrellas</option>
+
+                    </select>
+                  </div>
+                  
+                  <div class="input-group">
+                    <label class="input-group-text" for="inputGroupSelect01">puntuacion hasta</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>opciones</option>
+                      <option value="1">1 estrella</option>
+                      <option value="2">2 estrellas</option>
+                      <option value="3">3 estrellas</option>
+                      <option value="4">4 estrellas</option>
+                      <option value="5">5 estrellas</option>
+
+                    </select>
+                  </div>
+                   
+                </div>
+
+                <div class=" col-md-3" >
+
+                  <div class="input-group">
+                    <label class="input-group-text" for="inputGroupSelect01">genero</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>opciones</option>
+                      <option value="1">accion</option>
+                      <option value="2">drama</option>
+                      <option value="3">comedia</option>
+                      <option value="4">terror</option>
+                      <option value="5">musical</option>
+
+                    </select>
+                  </div>
+                  
+            
+                </div>
+                 
+                </div>
+                
+
+
+                
+
+
                 
                 <main class="section__recomendaciones container card-group  ">
                     <div class="row g-2">
@@ -249,27 +363,29 @@
 
         <footer class="footer">
             
-            <div>
-                <a href="#"><img class="footer__logo"  src="../assets/logo N.jpg"  alt="logo"></a>
-            </div> 
-            <article>
-                <p class="footer__descripcion">
-                    Somos una comunidad de jóvenes unidos por el cine. <br>
-                    Apoyamos el séptimo arte como interlocutor de grandes historias <br>
-                    y como el mejor espacio para conocer otras ficciones...
-                 </p>
-            </article>
+
+          <div>
+              <a href="#"><img class="footer__logo"  src="../assets/logo N.png"  alt="logo"></a>
+              <p class="footer__descripcion">
+                Desarrollado por Ivan Anido
+               </p>
+          </div> 
          
-         <div>
-             <h2 class="footer__seguinos">seguinos</h2>
-             <ul class="footer__icons">
-                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
-             </ul>
-         </div>
- 
-        
+       
+       <div class="d-flex align-items-center justify-content-center flex-column">
+           <h2 class="footer__seguinos">seguinos</h2>
+           <ul class="footer__icons">
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               <a href="#"><i class="fa-brands fa-youtube"></i></a>
+               <a href="#"><i class="fa-brands fa-instagram"></i></a>
+           </ul>
+       </div>
+    
+      
+    
+    <div><a href="registrate.html"><button type="button" class="btn btn-outline-warning">crear cuenta</button></a> </div>
+    
+      
     </footer>
     </main>
     
