@@ -1,0 +1,54 @@
+.grid__container{
+    grid-template-columns:100% ;
+        grid-template-rows: 1fr
+                            1fr
+                            1fr
+                            1fr;
+   display: grid;
+   grid-template-areas: 
+   "nav" 
+    "header"
+    "section"
+     "footer";
+
+     
+    
+}
+@include desktop
+    {
+     main{
+        grid-template-columns:15% auto 15% ;
+        grid-template-rows: auto
+                            auto
+                            auto ;
+        display: grid;
+        grid-template-areas: "nav nav nav"    
+                         "header header header" 
+                          "aside section section" 
+                          "footer footer footer"   ;
+       grid-column-gap: 1rem;    
+       grid-row-gap: 1rem;               
+       background-color: rgb(14, 13, 13);
+    }
+
+    nav {
+        grid-area: nav;
+    }
+    header {
+        grid-area: header;
+        background-color: black;
+    }
+    aside{
+        grid-area: aside;
+    }
+    section{
+        grid-area: section;
+        background-color: black;
+    }
+    footer{
+        grid-area: footer;
+    }
+   
+
+
+    }
