@@ -19,3 +19,12 @@
         color: rgb(192, 181, 167);
     }
     
+    .etiqueta{
+      
+        @include campos;
+color: map-get($colores ,"text-title" )
+    }
+
+    .selector {
+       @include campos;
+    }
