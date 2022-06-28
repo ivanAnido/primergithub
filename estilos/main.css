@@ -453,6 +453,27 @@ main {
   color: #c0b5a7;
 }
 
+.etiqueta {
+  background: #131212;
+  color: #f3a034;
+  border-radius: 4%;
+  border: 0.1rem solid #e0a65e;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  text-align: center;
+  color: #b19e86;
+}
+
+.selector {
+  background: #131212;
+  color: #f3a034;
+  border-radius: 4%;
+  border: 0.1rem solid #e0a65e;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .section__registro {
   background: #332144;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(4%, #332144), color-stop(29%, #321e1e), to(black));

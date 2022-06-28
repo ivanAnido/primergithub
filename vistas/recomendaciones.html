@@ -4,6 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/main.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,32 +25,32 @@
 
 
         <aside  class="aside" >
-            <h2>mejores peliculas</h2>
-           <div class="container-fluid">
-             <div class="column">
-                 <div class="card text-bg-dark" style="width: 100%;">
-                     <img src="../assets/Elpadrino.webp" class="card-img-top" alt="...">
-                     <div class="card-body">
-                         <h2> el padrino</h2>
-                         <h6> 2h 55min/ drama</h6>
-                         <h6> dirigida por: coppola</h6>
-                         <h6> valoracion:....</h6>
-                       <a href="../vistas/recomendaciones.html" class="btn btn-primary fs-6">recomedaciones</a>
-                     </div>
-                     <div class="card text-bg-dark" style="width: 100%;">
-                         <img src="../assets/Elpadrino.webp" class="card-img-top" alt="...">
-                         <div class="card-body">
-                             <h2> el padrino</h2>
-                             <h6> 2h 55min/ drama</h6>
-                             <h6> dirigida por: coppola</h6>
-                             <h6> valoracion:....</h6>
-                           <a href="../vistas/recomendaciones.html" class="btn btn-primary fs-6">recomedaciones</a>
-                         </div>
-                   </div>
-             </div>
-               
+          <h2>mejores peliculas</h2>
+         <div class="container-fluid">
+           <div class="column">
+               <div class="card text-bg-dark" style="width: 100%;">
+                   <img src="../assets/recomendaciones/sueños de fuga.jpg" class="card-img-top" alt="imagen pelicula sueños de fuga">
+                   <div class="card-body">
+                    <h2> sueños de fuga</h2>
+                    
+                    <h6>Dirección: Frank Darabont</h6>
+                    <h6> valoracion:....</h6>
+                  <a href="./vistas/recomendaciones.html" class="btn btn-primary fs-6">recomedaciones</a>
+                </div>
+                   <div class="card text-bg-dark" style="width: 100%;">
+                       <img src="../assets/Elpadrino.webp" class="card-img-top" alt="imagen pelicula el padrino">
+                       <div class="card-body">
+                           <h2> el padrino</h2>
+                          
+                           <h6> dirigida por: coppola</h6>
+                           <h6> valoracion:....</h6>
+                         <a href="../vistas/recomendaciones.html" class="btn btn-primary fs-6">recomedaciones</a>
+                       </div>
+                 </div>
            </div>
-         </aside>      
+             
+         </div>
+       </aside>      
 
          <nav class="nav navbar sticky-top navbar-dark navbar-expand-lg bg-dark">
             <div class="container-fluid">
@@ -133,135 +134,115 @@
 
 
         <section> <h2 class="subtitulos__h2 mt-5">filtros</h2>
-       <!----     <div class="section__recomendaciones">  
-                <div class="main__filtro">
-                    <select class="select__filtro" name="genero" id="genero"> 
-                        <option value="">genero</option>
-                        <option value="accion">accion</option>
-                        <option value="drama">drama</option>
-                        <option value="comedia">comedia</option>
-                        <option value="suspenso">suspenso</option>
-                    </select>
-                    <select class="select__filtro" name="decada" id="decada"> 
-                        <option value="">decada</option>
-                        <option value="1980">1980</option>
-                        <option value="1990">1990</option>
-                        <option value="2000">2000</option>
-                        <option value="2010">2010</option>
-                    </select>
-                    <select class="select__filtro" name="valoracion" id="valoracion"> 
-                        <option value="">valoracion</option>
-                        <option value="mas visto">mas visto</option>
-                        <option value="puntuacion">puntuacion</option>
-                        <option value="lo ultimo">lo ultimo</option>
-                    </select>
-                </div>
-              -->
-              
+      
+              <div class="container ">
+                  
+                  <div class=" col-md-6 row justify-content-md-center " >
+                    <div class="input-group mb-2 ">
+                      <label class="input-group-text etiqueta " for="inputGroupSelect01">genero</label>
+                      <select class="form-select selector " id="inputGroupSelect01">
+                        <option selected></option>
+                        <option value="1">accion</option>
+                        <option value="2">drama</option>
+                        <option value="3">comedia</option>
+                        <option value="4">terror</option>
+                        <option value="5">musical</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+  
 
-                <div class="container row ">
-                  <div class="col-md-3 " >
-                    <div class="input-group">
-                      <label class="input-group-text" for="inputGroupSelect01">Ordenar por</label>
-                      <select class="form-select" id="inputGroupSelect01">
-                        <option selected>opciones</option>
+                <div class="row">
+                  
+                  <div class=" col-md-3 " >
+                    <div class="input-group mb-1">
+                      <label class="input-group-text etiqueta" for="inputGroupSelect01">Ordenar por</label>
+                      <select class="form-select selector" id="inputGroupSelect01">
+                        <option selected></option>
                         <option value="1">titulo</option>
                         <option value="2">lo mas nuevo</option>
                         <option value="3">lo mas viejo</option>
                         <option value="4">mejor puntuado</option>
                         <option value="5">peor puntuado</option>
-
                       </select>
                     </div>
-                    
-                    <div class="input-group">
-                       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="titulo de pelicula">
+
+                    <div class="input-group mb-1">
+                      <input type="text" class="form-control selector" id="formGroupExampleInput" placeholder="titulo de pelicula">
                     </div>
+                    
+                  </div>
                      
-                      
-
-
-                  </div>
-                    
                   <div class=" col-md-3" >
-                    
-                    <div class="input-group">
-                      <label class="input-group-text" for="inputGroupSelect01">fecha desde</label>
-                      <select class="form-select" id="inputGroupSelect01">
-                        <option selected>opciones</option>
+                    <div class="input-group mb-1">
+                      <label class="input-group-text etiqueta" for="inputGroupSelect01">fecha desde</label>
+                      <select class="form-select selector" id="inputGroupSelect01">
+                        <option selected></option>
                         <option value="1">1980</option>
                         <option value="2">1990</option>
                         <option value="3">2000</option>
                         <option value="4">2010</option>
                         <option value="5">2020</option>
-
                       </select>
                     </div>
-                    
-                    <div class="input-group">
-                      <label class="input-group-text" for="inputGroupSelect01">fecha hasta</label>
-                      <select class="form-select" id="inputGroupSelect01">
-                        <option selected>opciones</option>
+
+                    <div class="input-group mb-1">
+                      <label class="input-group-text etiqueta" for="inputGroupSelect01">fecha hasta</label>
+                      <select class="form-select selector" id="inputGroupSelect01">
+                        <option selected></option>
                         <option value="1">1980</option>
                         <option value="2">1990</option>
                         <option value="3">2000</option>
                         <option value="4">2010</option>
                         <option value="5">2020</option>
-
                       </select>
                     </div>
-
                   </div>
 
-                <div class=" col-md-3" >
-
-                  <div class="input-group">
-                    <label class="input-group-text" for="inputGroupSelect01">puntuacion desde</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>opciones</option>
-                      <option value="1">1 estrella</option>
-                      <option value="2">2 estrellas</option>
-                      <option value="3">3 estrellas</option>
-                      <option value="4">4 estrellas</option>
-                      <option value="5">5 estrellas</option>
-
-                    </select>
-                  </div>
-                  
-                  <div class="input-group">
-                    <label class="input-group-text" for="inputGroupSelect01">puntuacion hasta</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>opciones</option>
-                      <option value="1">1 estrella</option>
-                      <option value="2">2 estrellas</option>
-                      <option value="3">3 estrellas</option>
-                      <option value="4">4 estrellas</option>
-                      <option value="5">5 estrellas</option>
-
-                    </select>
-                  </div>
+                  <div class=" col-md-3" >
+                    <div class="input-group mb-1">
+                      <label class="input-group-text etiqueta" for="inputGroupSelect01">puntuacion desde</label>
+                      <select class="form-select selector" id="inputGroupSelect01">
+                        <option selected></option>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                      </select>
+                    </div>
                    
-                </div>
-
-                <div class=" col-md-3" >
-
-                  <div class="input-group">
-                    <label class="input-group-text" for="inputGroupSelect01">genero</label>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>opciones</option>
-                      <option value="1">accion</option>
-                      <option value="2">drama</option>
-                      <option value="3">comedia</option>
-                      <option value="4">terror</option>
-                      <option value="5">musical</option>
-
-                    </select>
+                    <div class="input-group">
+                      <label class="input-group-text etiqueta" for="inputGroupSelect01">puntuacion hasta</label>
+                      <select class="form-select selector" id="inputGroupSelect01">
+                        <option selected></option>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                      </select>
+                    </div>
                   </div>
+  
+                </div>  
+  
+              </div>
+                    
+                    
+                    
+                    
+                    
+
+
+                
                   
-            
-                </div>
                  
-                </div>
+                  
+                   
+                  
+                 
                 
 
 
@@ -269,18 +250,19 @@
 
 
                 
-                <main class="section__recomendaciones container card-group  ">
+                <main class="section__recomendaciones container card-group   ">
                     <div class="row g-2">
                         <div class="card  text-bg-dark mb-3" style="max-width: 540px;">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="../assets/Elpadrino.webp" class="img-fluid rounded-start" alt="...">
+                                <img src="../assets/recomendaciones/sueños de fuga.jpg" class="img-fluid rounded-start" alt="imagen de pelicula sueños de fuga">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
-                                  <h5 class="card-title">El padrino</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  <h5 class="card-title">Sueños de fuga</h5>
+                                  <p class="card-text">El banquero Andy Dufresne es arrestado por matar a su esposa y amante. Tras una dura adaptación, intenta mejorar las condiciones de la prisión y dar esperanza a sus compañeros. </p>
+                                  <p class="card-text">Dirección: Frank Darabont</p>
+                                  <p class="card-text">drama</p>
                                 </div>
                               </div>
                             </div>
@@ -288,13 +270,14 @@
                           <div class="card text-bg-dark mb-3" style="max-width: 540px;">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="../assets/Elpadrino.webp" class="img-fluid rounded-start" alt="...">
+                                <img src="../assets/Elpadrino.webp" class="img-fluid rounded-start" alt="imagen de pelicula el padrino">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
                                   <h5 class="card-title">El padrino</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  <p class="card-text">El patriarca de una organización criminal transfiere el control de su clandestino imperio a su reacio hijo.</p>
+                                  <p class="card-text">Dirección: Francis Ford Coppola</p>
+                                  <p class="card-text">crimen drama</p>
                                 </div>
                               </div>
                             </div>
@@ -302,13 +285,14 @@
                           <div class="card text-bg-dark mb-3" style="max-width: 540px;">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="../assets/Elpadrino.webp" class="img-fluid rounded-start" alt="...">
+                                <img src="../assets/recomendaciones/Batman_el_Caballero_de_la_Noche.webp" class="img-fluid rounded-start" alt="imagen de pelicula Batman">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
-                                  <h5 class="card-title">El padrino</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  <h5 class="card-title">Batman: El Caballero de la Noche</h5>
+                                  <p class="card-text">Cuando el Joker emerge causando caos y violencia en Gotham, el caballero de la noches deberá aceptar una de las pruebas psicológicas y físicas más difíciles para poder luchar con las injusticias del enemigo.</p>
+                                  <p class="card-text">Dirección: Christopher Nolan</p>
+                                  <p class="card-text">accion crimen drama</p>
                                 </div>
                               </div>
                             </div>
@@ -316,13 +300,14 @@
                           <div class="card text-bg-dark mb-3" style="max-width: 540px;">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="../assets/Elpadrino.webp" class="img-fluid rounded-start" alt="...">
+                                <img src="../assets/recomendaciones/Forrest_Gump-212765827-large.jpg" class="img-fluid rounded-start" alt="...">
                               </div>
                               <div class="col-md-8">
                                 <div class="card-body">
-                                  <h5 class="card-title">El padrino</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  <h5 class="card-title">Forrest Gump</h5>
+                                  <p class="card-text">Las presidencias de Kennedy y Johnson, los eventos de Vietnam, Watergate vistas desde la perspectiva de un hombre de Alabama con un coeficiente intelectual de 75.</p>
+                                  <p class="card-text">Dirección: Robert Zemeckis</p>
+                                  <p class="card-text">comedia romance drama</p>
                                 </div>
                               </div>
                             </div>
